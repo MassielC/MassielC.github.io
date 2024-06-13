@@ -60,7 +60,7 @@
 /* Font size for large devices */
 @media screen and (min-width: 968px) {
     :root {
-        --big-font-size: 3rem;
+        --big-font-size: 2.8rem;
         --h1-font-size: 2.25rem;
         --h2-font-size: 1.5rem;
         --h3-font-size: 1.25rem;
@@ -195,7 +195,7 @@ img{
 .nav__logo,
 .nav__toggle{
     color: var(--title-color);
-    font-weight: var(--font-medium);
+    font-weight: var(--font-semi-bold);
 }
 
 .nav__logo:hover{
@@ -317,6 +317,11 @@ img{
     font-size: var(--big-font-size);
 }
 
+.home__name{
+    font-size: var(--big-font-size);
+    color:var(--first-color)
+}
+
 .home__subtitle{
     font-size: var(--h3-font-size);
     color: var(--text-color);
@@ -361,9 +366,10 @@ img{
     display: inline-block;
     background-color: var(--first-color);
     color: #FFF;
-    padding: 1rem;
-    border-radius: .5rem;
+    padding: .7rem;
+    border-radius: .7rem;
     font-weight: var(--font-medium);
+    box-shadow: 0 0 .5rem var(--first-color);
 }
 
 .button:hover{
@@ -864,6 +870,7 @@ img{
 /*==================== CONTACT ME ====================*/
 .contact__container{
     row-gap: 3rem;
+    justify-content: center
 }
 
 .centered-container {
@@ -989,7 +996,7 @@ img{
 /*==================== FOOTER ====================*/
 .footer{
     padding-top: 2rem;
-    text-align: center; /* Allinea tutto al centro */
+    text-align: center;
 }
 
 .footer__container{
@@ -1146,7 +1153,7 @@ img{
 /* For medium devices */
 @media screen and (min-width: 568px){
     .home__content{
-        grid-template-columns: max-content 1fr 1fr;
+        grid-template-columns: max-content 1.1fr 1fr;
     }
     .home__data{
         grid-column: initial;
